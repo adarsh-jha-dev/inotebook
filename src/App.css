@@ -13,6 +13,12 @@
   }
 }
 
+.buttons{
+  display: flex;
+  margin-left: 60%;
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,3 +42,125 @@
     transform: rotate(360deg);
   }
 }
+
+form input[type='submit'] {
+  background-color: #ea4c88;
+  color: #eee;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+
+/* NoteItem related styling */
+.note-message {
+  color: whitesmoke;
+  background-color: #534848;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 250px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.note-content {
+  padding: 10px;
+}
+
+.note-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.note-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+Link[role='button']{
+  background-color: #d44179;
+}
+
+.delete-button{
+  background-color: #ff0000;
+}
+
+
+.note-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+/* Style for adding a note component */
+.add-note-container {
+  color: white;
+  max-width: 585px;
+  max-height: 585px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 65px;
+  background: #735e5e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sticky{
+  position: sticky;
+  top: 0;
+}
+
+.add-note-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.add-note-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  width: 100%;
+  background-color: #ffe7f5;
+}
+
+.add-note-button {
+  background: #1da1f2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.add-note-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.add-note-button:hover {
+  background: #0d91e1;
+}
+
